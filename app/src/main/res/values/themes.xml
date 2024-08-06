@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TodoListApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+    </style>
+
+    <style name="Theme.TodoListApp" parent="Base.Theme.TodoListApp">
+
+
+        <item name="colorPrimary">@color/white</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.TodoListApp</item>
+
+
+
+
+    </style>
+
+
+</resources>

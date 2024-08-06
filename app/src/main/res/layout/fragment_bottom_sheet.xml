@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+
+    android:background="@drawable/bottem_sheet_round"
+
+
+
+
+
+
+    android:layout_height="match_parent"
+    tools:context=".BottomSheetFragment">
+
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/create_a_new_task"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+
+
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+
+
+
+
+        android:hint="Task name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#0E0D0E"
+        app:boxStrokeWidth="1dp"
+
+    >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/EditTextTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="17"
+            android:inputType="text"
+            android:imeActionLabel="Zain"
+            android:paddingStart="10dp"
+            tools:ignore="HardcodedText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/priority"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/buttonPriorityHigh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_button"
+
+                android:fontFamily="@font/poppins"
+
+
+                android:text="@string/high"
+
+                android:textAllCaps="false"
+                android:textColor="#F1EEEE"
+
+
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPriorityMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_button"
+                android:fontFamily="@font/poppins"
+
+
+                android:text="@string/medium"
+
+                android:textAllCaps="false"
+                android:textColor="#F1EEEE"
+
+
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPriorityLow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_button"
+                android:fontFamily="@font/poppins"
+
+
+                android:text="@string/low"
+
+                android:textAllCaps="false"
+                android:textColor="#F1EEEE"
+
+
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonPriorityVeryLow"
+                android:layout_width="wrap_content"
+
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="10dp"
+
+                android:background="@drawable/round_button"
+                android:fontFamily="@font/poppins"
+
+                android:text="@string/very_low"
+
+                android:textAllCaps="false"
+                android:textColor="#F1EEEE"
+
+
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonBottomSheetCreateTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/round_button"
+        android:drawableStart="@drawable/add"
+        android:fontFamily="@font/poppins_medium"
+
+
+
+        android:paddingStart="30dp"
+
+        android:paddingEnd="30dp"
+        android:text="@string/add_task"
+
+        android:textAllCaps="false"
+        android:textColor="#F1EEEE"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonBottomSheetCreateTask" />
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

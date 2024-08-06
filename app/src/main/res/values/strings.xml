@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TodoListApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_more_content_on_linkedln">Add more Content on Linkedln</string>
+    <string name="abc">aaa</string>
+    <string name="high_priority">High Priority</string>
+    <string name="today_tasks">Today Tasks</string>
+    <string name="_09_6_2024">09:6:2024</string>
+    <string name="Incompleted">UnCompleted</string>
+    <string name="create_task">Create Task</string>
+    <string name="completed">Completed</string>
+    <string name="uncompleted">Uncompleted</string>
+    <string name="very_low">V Low</string>
+    <string name="add_task">Add Task</string>
+    <string name="low">Low</string>
+    <string name="medium">Medium</string>
+    <string name="priority">Priority</string>
+    <string name="create_a_new_task">Create a new task</string>
+    <string name="high">High</string>
+</resources>
